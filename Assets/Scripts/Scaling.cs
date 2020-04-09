@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Scaling : MonoBehaviour
 {
-    private float mininum = 0.01f;
+    private float _timer = 0f;
+    private float minimum = 0.01f;
     private float maximum = 0.8f;
     // Start is called before the first frame update
     void Start()
@@ -15,10 +16,11 @@ public class Scaling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.localScale = new Vector2(Mathf.Lerp(mininum, maximum, Time.time/5), Mathf.Lerp(mininum, maximum, Time.time/5));
-        /*if (transform.localScale.x >= 0.8f)
+        _timer += Time.deltaTime;
+        transform.localScale = new Vector2(Mathf.Lerp(minimum, maximum, _timer/5), Mathf.Lerp(minimum, maximum, _timer/5));
+        if (transform.localScale.x >=0.8f)
         {
-            //Destroy(gameObject);
-        }*/
+            Destroy(gameObject);
+        }
     }
 }
