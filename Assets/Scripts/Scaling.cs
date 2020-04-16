@@ -5,7 +5,7 @@ using UnityEngine;
 public class Scaling : MonoBehaviour
 {
     private float _timer = 0f;
-    private float minimum = 0.01f;
+    private float minimum = 0.05f;
     private float maximum = 0.8f;
     // Start is called before the first frame update
     void Start()
