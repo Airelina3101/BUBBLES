@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 4f686f37c8a28e043b4ed54cfa88e83e
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/SceneWithoutTimer.unity
+    guid: d62f8b96a66e11e44924907ca7406595
+  - enabled: 1
+    path: Assets/Scenes/SceneWithTimer.unity
+    guid: 971ce92b027e5b34f80eb2fed524f69a
   m_configObjects: {}

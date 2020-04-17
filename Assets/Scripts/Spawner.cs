@@ -19,6 +19,8 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     private void Start()
     {
+        _timer = 1;
+        Time.timeScale = 1;
     }
     void Update()
     {

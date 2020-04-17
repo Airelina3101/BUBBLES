@@ -12,7 +12,6 @@ public class KillingBubble : MonoBehaviour
     {
         Destroy(gameObject);
         AddScore();
-        Debug.Log("Kill");
         _scoreCounter.AddValue(_addScore);
     }
     private void AddScore()
